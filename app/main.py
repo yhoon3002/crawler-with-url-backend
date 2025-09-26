@@ -8,7 +8,7 @@ app = FastAPI(debug=settings.DEBUG)
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOW_ORIGINS or ["*"],  # 개발 편의
+    allow_origins=settings.ALLOW_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
