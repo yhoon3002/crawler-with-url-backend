@@ -1,8 +1,7 @@
 """
 요청/응답 데이터 구조 정의(스키마)
-FastAPI가 자동으로 검증하고 문서화 할 수 있도록 함
 """
-from pydantic import BaseModel, HttpUrl
+from pydantic import BaseModel, HttpUrl # pydantic: 데이터 검증 자동으로 해줌
 
 class ExtractReq(BaseModel):
     url: HttpUrl
